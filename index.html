@@ -1,66 +1,63 @@
-<!DOCTYPE html>
-<html lang="ru">
+<!DOCTYPE html><html lang="ru">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Manserog — Premium Blog</title>
-
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
-
-<style>
+<title>MAN SEROG — Gaming & Business</title><link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600;700&family=Inter:wght@300;400;600&display=swap" rel="stylesheet"><style>
 body {
     margin: 0;
     font-family: 'Inter', sans-serif;
-    background: linear-gradient(180deg, #000000, #0a0a0a);
+    background: radial-gradient(circle at top, #050505, #000000);
     color: #eaeaea;
 }
 
 header {
     text-align: center;
-    padding: 80px 20px;
-    background: radial-gradient(circle at center, #111 0%, #000 100%);
+    padding: 90px 20px;
+    background: linear-gradient(180deg, #000000, #050505);
+    border-bottom: 1px solid #111;
 }
 
 header h1 {
-    font-size: 56px;
+    font-family: 'Orbitron', sans-serif;
+    font-size: 64px;
     margin: 0;
-    letter-spacing: 4px;
+    color: #00ffe1;
+    letter-spacing: 6px;
 }
 
 header p {
-    color: #888;
     margin-top: 15px;
+    color: #888;
     font-size: 18px;
 }
 
 nav {
     text-align: center;
     padding: 18px;
-    background: #050505;
-    border-top: 1px solid #111;
+    background: #000;
     border-bottom: 1px solid #111;
 }
 
 nav a {
     color: #bbb;
-    margin: 0 20px;
+    margin: 0 22px;
     text-decoration: none;
     font-weight: 600;
     font-size: 14px;
 }
 
 nav a:hover {
-    color: white;
+    color: #00ffe1;
 }
 
 section {
-    max-width: 1100px;
+    max-width: 1150px;
     margin: 50px auto;
-    padding: 40px;
-    background: rgba(20,20,20,0.9);
+    padding: 45px;
+    background: rgba(10,10,10,0.95);
     border-radius: 20px;
-    border: 1px solid #1f1f1f;
-    box-shadow: 0 0 40px rgba(0,0,0,0.6);
+    border: 1px solid #111;
+    box-shadow: 0 0 50px rgba(0,255,225,0.05);
 }
 
 .hero {
@@ -68,36 +65,44 @@ section {
 }
 
 .hero img {
-    width: 180px;
-    height: 180px;
+    width: 190px;
+    height: 190px;
     border-radius: 50%;
-    border: 3px solid #222;
+    border: 3px solid #00ffe1;
     margin-bottom: 25px;
 }
 
 h2 {
+    font-family: 'Orbitron', sans-serif;
+    color: #00ffe1;
     margin-top: 0;
-    border-bottom: 1px solid #222;
+    border-bottom: 1px solid #111;
     padding-bottom: 12px;
 }
 
-.posts {
+.services {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
     gap: 25px;
 }
 
-.post-card {
-    background: #0a0a0a;
+.service-card {
+    background: #050505;
     padding: 25px;
     border-radius: 16px;
-    border: 1px solid #222;
+    border: 1px solid #111;
     transition: 0.3s;
 }
 
-.post-card:hover {
-    transform: translateY(-5px);
-    border-color: #444;
+.service-card:hover {
+    transform: translateY(-6px);
+    border-color: #00ffe1;
+}
+
+.video-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 25px;
 }
 
 .video-container {
@@ -110,161 +115,97 @@ h2 {
     position: absolute;
     width: 100%;
     height: 100%;
-    border-radius: 12px;
+    border-radius: 14px;
 }
 
-.socials {
+.social-buttons {
     text-align: center;
+    margin-top: 20px;
 }
 
-.socials a {
+.social-buttons a {
     display: inline-block;
-    margin: 10px;
-    padding: 12px 22px;
-    border: 1px solid #333;
-    border-radius: 10px;
-    color: #ccc;
+    margin: 12px;
+    padding: 14px 28px;
+    border-radius: 12px;
+    border: 1px solid #00ffe1;
+    background: transparent;
+    color: #00ffe1;
     text-decoration: none;
+    font-weight: 600;
     transition: 0.3s;
 }
 
-.socials a:hover {
-    background: #222;
-    color: white;
+.social-buttons a:hover {
+    background: #00ffe1;
+    color: #000;
 }
 
 .counter {
     text-align: center;
     margin-top: 20px;
-    color: #777;
+    color: #666;
 }
 
 footer {
     text-align: center;
-    padding: 30px;
-    color: #666;
+    padding: 35px;
+    color: #555;
+    font-size: 14px;
 }
-</style>
-</head>
-
-<body>
-
-<header>
+</style></head><body><header>
     <h1>MAN SEROG</h1>
-    <p>Premium блогер • Официальный сайт</p>
-</header>
-
-<nav>
+    <p>Gaming • Content • Business</p>
+</header><nav>
     <a href="#about">Обо мне</a>
-    <a href="#posts">Публикации</a>
-    <a href="#video">Видео</a>
-    <a href="#socials">Соцсети</a>
-</nav>
+    <a href="#services">Услуги</a>
+    <a href="#portfolio">Контент</a>
+    <a href="#socials">Контакты</a>
+</nav><section class="hero"><img src="avatar.jpg" alt="Roman Kirsa"><h2>Roman Kirsa Nazarovich</h2><p>
+Молодой IT-специалист, контент-мейкер и монтажёр.
+SoundCloud рэпер и создатель игрового контента.
+Работаю в сфере видео, монтажа и digital-проектов.
+</p><div class="counter">
+Просмотров страницы:
+<span id="visitCount">0</span>
+</div></section><section id="about"><h2>Обо мне</h2><p>
+Имя: Роман Кирса Назарович<br>
+Дата рождения: 25.07.2004<br><br>Я занимаюсь созданием игрового и развлекательного контента, монтажом видео и развитием личного бренда. Имею знания в IT, создании контента и работе с медиа.
 
-<section class="hero">
-
-    <!-- ВСТАВЬ СВОЁ ФОТО -->https://yapx.ru/album/dcQ4w
-    <img src="avatar.jpg" alt="Manserog">
-
-    <h2>Manserog</h2>
-
-    <p>
-        Блогер, создающий премиум контент.
-        
-    </p>
-
-    <div class="counter">
-        Просмотров страницы:
-        <span id="visitCount">12K</span>
-    </div>
-
-</section>
-
-<section id="about">
-
-    <h2>Обо мне</h2>
-
-    <p>
-      Биография: в кратце молодой айтишник с многими знаниями ведущий блог, SoundCloud рэпер.
-    </p>
-
-</section>
-
-<section id="posts">
-
-    <h2>Последние публикации</h2>
-
-    <div class="posts">
-
-        <div class="post-card">
-            <h3>Публикация №1</h3>
-            <p>Описание публикации.</p>
-        </div>
-
-        <div class="post-card">
-            <h3>Публикация №2</h3>
-            <p>Описание публикации.</p>
-        </div>
-
-        <div class="post-card">
-            <h3>Публикация №3</h3>
-            <p>Описание публикации.</p>
-        </div>
-
-    </div>
-
-</section>
-
-<section id="video">
-
-    <h2>Видео</h2>
-
-    <div class="video-container">
-
-        <!-- ВСТАВЬ СВОЁ ВИДЕО -->https://www.tiktok.com/t/ZP8gxYF4Q/
-        <iframe
-        src="https://www.youtube.com/embed/VIDEO_ID"
-        allowfullscreen>
-        </iframe>
-
-    </div>
-
-</section>
-
-<section id="socials">
-
-    <h2>Социальные сети</h2>
-
-    <div class="socials">
-      <!-- ВСТАВЬ СВОИ ССЫЛКИ -->
-        <a href="#">YouTube</a>
-        <a href="#">Telegram</a>https://t.me/+79010027011
-        <a href="#">Instagram</a>
-        <a href="#">TikTok</a>tiktok.com/@roman_kirsa
-
-    </div>
-
-</section>
-
-<footer>
-    © 2026 Manserog.com — Premium блог
-</footer>
-
-<script>
+Основные направления: — Gaming контент — Монтаж видео — Digital проекты — Развитие медиа брендов</p></section><section id="services"><h2>Услуги</h2><div class="services"><div class="service-card">
+<h3>🎮 Gaming контент</h3>
+<p>Создание игрового видео, стримов и клипов.</p>
+</div><div class="service-card">
+<h3>🎬 Видео монтаж</h3>
+<p>Профессиональный монтаж для TikTok, YouTube и других платформ.</p>
+</div><div class="service-card">
+<h3>💼 Digital услуги</h3>
+<p>Создание контента и продвижение личных брендов.</p>
+</div></div></section><section id="portfolio"><h2>Последние видео</h2><div class="video-grid"><div class="video-container">
+<iframe src="https://www.tiktok.com/t/ZP8gxSyKu/" allowfullscreen></iframe>
+</div><div class="video-container">
+<iframe src="https://www.tiktok.com/t/ZP8gxYF4Q/" allowfullscreen></iframe>
+</div><div class="video-container">
+<iframe src="https://www.tiktok.com/t/ZP8gxMYy7/" allowfullscreen></iframe>
+</div></div></section><section id="socials"><h2>Контакты и соцсети</h2><div class="social-buttons"><a href="https://tiktok.com/@roman_kirsa" target="_blank">
+TikTok
+</a><a href="https://t.me/manserog" target="_blank">
+Telegram
+</a></div></section><footer>
+© 2026 MAN SEROG — Gaming & Business Brand
+</footer><script>
 
 if (localStorage.getItem('visitCount')) {
-    localStorage.setItem(
-        'visitCount',
-        Number(localStorage.getItem('visitCount')) + 1
-    );
+localStorage.setItem(
+'visitCount',
+Number(localStorage.getItem('visitCount')) + 1
+);
 } else {
-    localStorage.setItem('visitCount', 1);
+localStorage.setItem('visitCount', 1);
 }
 
 document.getElementById('visitCount').textContent =
 localStorage.getItem('visitCount');
 
-</script>
-
-</body>
+</script></body>
 </html>
