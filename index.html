@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Manserog — Premium Blog</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+<style>
+body {
+    margin: 0;
+    font-family: 'Inter', sans-serif;
+    background: linear-gradient(180deg, #000000, #0a0a0a);
+    color: #eaeaea;
+}
+
+header {
+    text-align: center;
+    padding: 80px 20px;
+    background: radial-gradient(circle at center, #111 0%, #000 100%);
+}
+
+header h1 {
+    font-size: 56px;
+    margin: 0;
+    letter-spacing: 4px;
+}
+
+header p {
+    color: #888;
+    margin-top: 15px;
+    font-size: 18px;
+}
+
+nav {
+    text-align: center;
+    padding: 18px;
+    background: #050505;
+    border-top: 1px solid #111;
+    border-bottom: 1px solid #111;
+}
+
+nav a {
+    color: #bbb;
+    margin: 0 20px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 14px;
+}
+
+nav a:hover {
+    color: white;
+}
+
+section {
+    max-width: 1100px;
+    margin: 50px auto;
+    padding: 40px;
+    background: rgba(20,20,20,0.9);
+    border-radius: 20px;
+    border: 1px solid #1f1f1f;
+    box-shadow: 0 0 40px rgba(0,0,0,0.6);
+}
+
+.hero {
+    text-align: center;
+}
+
+.hero img {
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    border: 3px solid #222;
+    margin-bottom: 25px;
+}
+
+h2 {
+    margin-top: 0;
+    border-bottom: 1px solid #222;
+    padding-bottom: 12px;
+}
+
+.posts {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 25px;
+}
+
+.post-card {
+    background: #0a0a0a;
+    padding: 25px;
+    border-radius: 16px;
+    border: 1px solid #222;
+    transition: 0.3s;
+}
+
+.post-card:hover {
+    transform: translateY(-5px);
+    border-color: #444;
+}
+
+.video-container {
+    position: relative;
+    padding-bottom: 56.25%;
+    height: 0;
+}
+
+.video-container iframe {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 12px;
+}
+
+.socials {
+    text-align: center;
+}
+
+.socials a {
+    display: inline-block;
+    margin: 10px;
+    padding: 12px 22px;
+    border: 1px solid #333;
+    border-radius: 10px;
+    color: #ccc;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.socials a:hover {
+    background: #222;
+    color: white;
+}
+
+.counter {
+    text-align: center;
+    margin-top: 20px;
+    color: #777;
+}
+
+footer {
+    text-align: center;
+    padding: 30px;
+    color: #666;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <h1>MAN SEROG</h1>
+    <p>Premium блогер • Официальный сайт</p>
+</header>
+
+<nav>
+    <a href="#about">Обо мне</a>
+    <a href="#posts">Публикации</a>
+    <a href="#video">Видео</a>
+    <a href="#socials">Соцсети</a>
+</nav>
+
+<section class="hero">
+
+    <!-- ВСТАВЬ СВОЁ ФОТО -->https://yapx.ru/album/dcQ4w
+    <img src="avatar.jpg" alt="Manserog">
+
+    <h2>Manserog</h2>
+
+    <p>
+        Блогер, создающий премиум контент.
+        
+    </p>
+
+    <div class="counter">
+        Просмотров страницы:
+        <span id="visitCount">12K</span>
+    </div>
+
+</section>
+
+<section id="about">
+
+    <h2>Обо мне</h2>
+
+    <p>
+      Биография: в кратце молодой айтишник с многими знаниями ведущий блог, SoundCloud рэпер.
+    </p>
+
+</section>
+
+<section id="posts">
+
+    <h2>Последние публикации</h2>
+
+    <div class="posts">
+
+        <div class="post-card">
+            <h3>Публикация №1</h3>
+            <p>Описание публикации.</p>
+        </div>
+
+        <div class="post-card">
+            <h3>Публикация №2</h3>
+            <p>Описание публикации.</p>
+        </div>
+
+        <div class="post-card">
+            <h3>Публикация №3</h3>
+            <p>Описание публикации.</p>
+        </div>
+
+    </div>
+
+</section>
+
+<section id="video">
+
+    <h2>Видео</h2>
+
+    <div class="video-container">
+
+        <!-- ВСТАВЬ СВОЁ ВИДЕО -->https://www.tiktok.com/t/ZP8gxYF4Q/
+        <iframe
+        src="https://www.youtube.com/embed/VIDEO_ID"
+        allowfullscreen>
+        </iframe>
+
+    </div>
+
+</section>
+
+<section id="socials">
+
+    <h2>Социальные сети</h2>
+
+    <div class="socials">
+      <!-- ВСТАВЬ СВОИ ССЫЛКИ -->
+        <a href="#">YouTube</a>
+        <a href="#">Telegram</a>https://t.me/+79010027011
+        <a href="#">Instagram</a>
+        <a href="#">TikTok</a>tiktok.com/@roman_kirsa
+
+    </div>
+
+</section>
+
+<footer>
+    © 2026 Manserog.com — Premium блог
+</footer>
+
+<script>
+
+if (localStorage.getItem('visitCount')) {
+    localStorage.setItem(
+        'visitCount',
+        Number(localStorage.getItem('visitCount')) + 1
+    );
+} else {
+    localStorage.setItem('visitCount', 1);
+}
+
+document.getElementById('visitCount').textContent =
+localStorage.getItem('visitCount');
+
+</script>
+
+</body>
+</html>
